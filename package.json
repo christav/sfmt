@@ -1,0 +1,14 @@
+{
+  "name": "sfmt",
+  "version": "0.0.1",
+  "author": "Chris Tavares <ctavares@microsoft.com>",
+  "description": "beefed up version of util.format",
+  "main": "lib/sfmt.js",
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "should": "~1.2.2"
+  },
+  "scripts": {
+    "test": "mocha -R spec -u bdd"
+  }
+}
