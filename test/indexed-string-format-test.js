@@ -30,4 +30,8 @@ describe('indexed string format', function () {
   it('should ignore unknown type format', function () {
     sfmt('a %{0:q}', 'hello').should.equal('a hello');
   });
+
+  it('should be escaped with double percents', function () {
+  	sfmt('%%{0} bc', 'one').should.equal('%{0} bc');
+  })
 });
