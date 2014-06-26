@@ -1,7 +1,7 @@
 {
   "name": "sfmt",
-  "version": "0.0.1",
-  "author": "Chris Tavares <ctavares@microsoft.com>",
+  "version": "1.0.0",
+  "author": "Chris Tavares <cct@tavaresstudios.com>",
   "description": "beefed up version of util.format",
   "main": "lib/sfmt.js",
   "devDependencies": {
