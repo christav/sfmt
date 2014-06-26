@@ -15,10 +15,11 @@
 
 'use strict';
 
-var should = require('should');
-var sfmt = require('../lib/sfmt');
+var joe = require('joe');
+var should = require('chai').should();
+var sfmt = require('..');
 
-describe('indexed string format', function () {
+joe.describe('indexed string format', function (describe, it) {
   it('should default to strings when no format is specified', function () {
     sfmt('a %{2} b %{0} c%{1} d%{3}', 'a', 'b', 'c', 'd').should.equal('a c b a cb dd');
   });

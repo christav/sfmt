@@ -15,15 +15,17 @@
 
 'use strict';
 
-var should = require('should');
-var sfmt = require('../lib/sfmt');
+var joe = require('joe');
+var expect = require('chai').expect;
 
-describe('No format specifiers', function () {
+var sfmt = require('..');
+
+joe.describe('No format specifiers', function (describe, it) {
   it('should return empty string when formatting empty string', function () {
-    sfmt('').should.equal('');
+    expect(sfmt('')).to.equal('');
   });
 
   it('should return constant string when formatting with no specifiers', function () {
-    sfmt('abc d').should.equal('abc d');
+    expect(sfmt('abc d')).to.equal('abc d');
   });
 });

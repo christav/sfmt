@@ -15,10 +15,11 @@
 
 'use strict';
 
-var should = require('should');
-var sfmt = require('../lib/sfmt');
+var joe = require('joe');
+var should = require('chai').should();
+var sfmt = require('..');
 
-describe('positional string format', function () {
+joe.describe('positional string format', function (describe, it) {
   it('should format string when one descriptor', function () {
     sfmt('%s', 'abc').should.equal('abc');
   });

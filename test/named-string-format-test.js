@@ -15,10 +15,11 @@
 
 'use strict';
 
-var should = require('should');
-var sfmt = require('../lib/sfmt');
+var joe = require('joe');
+var should = require('chai').should();
+var sfmt = require('..');
 
-describe('named string format', function () {
+joe.describe('named string format', function (describe, it) {
   it('should get values from object by name', function () {
     sfmt('a: %{name} b: %{value}', { name: 'chris', value: 'dev'})
       .should.equal('a: chris b: dev');
